@@ -27,6 +27,7 @@ public class Main {
 		
 		Pilha.desempilha();
 		Pilha.desempilha();
+		System.out.println(Pilha.cont());
 		
 		usuario= Pilha.ultimo();
 		System.out.println(usuario);
