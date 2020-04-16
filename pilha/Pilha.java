@@ -16,7 +16,6 @@ public class Pilha {
 		
 		if(!vazia()) {
 			Usuario usuario= pilha.get(aux);
-			pilha.remove(aux);
 			aux-= 1;			
 			return usuario;
 		}else {
@@ -26,7 +25,7 @@ public class Pilha {
 	}
 	
 	public static int cont() {
-		return pilha.size();
+		return aux +1;
 	}
 	
 	public static Usuario ultimo() {
@@ -44,6 +43,7 @@ public class Pilha {
 		
 		boolean vazia= true;
 		if(aux > -1) vazia= false;
+		
 		return vazia;
 		
 	}

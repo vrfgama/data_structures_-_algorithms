@@ -16,26 +16,32 @@ public class Main {
 		u3.setNome("Manoel");
 		u3.setIdade(44);
 
+		
+		System.out.println(Pilha.vazia());
+		System.out.println(Pilha.cont());
+		System.out.println(Pilha.ultimo());
+		
 		Pilha.empilha(u1);
 		Pilha.empilha(u2);
 		Pilha.empilha(u3);
 		
+		System.out.println(Pilha.vazia());
 		System.out.println(Pilha.cont());
-		
-		Usuario usuario= Pilha.ultimo();
-		System.out.println(usuario);
+		System.out.println(Pilha.ultimo());
 		
 		Pilha.desempilha();
 		Pilha.desempilha();
+
+		System.out.println(Pilha.vazia());
 		System.out.println(Pilha.cont());
-		
-		usuario= Pilha.ultimo();
-		System.out.println(usuario);
-		
+		System.out.println(Pilha.ultimo());
+
+		Pilha.desempilha();
 		Pilha.desempilha();
 		
-		usuario= Pilha.ultimo();
-		System.out.println(usuario);
+		System.out.println(Pilha.vazia());
+		System.out.println(Pilha.cont());
+		System.out.println(Pilha.ultimo());
 	}
 	
 }
