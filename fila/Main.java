@@ -35,10 +35,14 @@ public class Main {
 		System.out.println(Fila.tamanho());
 		System.out.println(Fila.vazia());
 		System.out.println(Fila.proximo());
+
+		Fila.desenfilera();
+		Fila.desenfilera();
 		
 		
-		
-		
+		System.out.println(Fila.tamanho());
+		System.out.println(Fila.vazia());
+		System.out.println(Fila.proximo());
 		
 	}
 

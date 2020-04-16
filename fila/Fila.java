@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Fila {
 	
 	static ArrayList<Usuario> fila= new ArrayList<Usuario>();
+	static int cursor= 0;
 	
 	
 	public static void enfilera(Usuario usuario ) {
@@ -23,15 +24,15 @@ public class Fila {
 	
 	
 	public static int tamanho() {
-		return fila.size();
+		return ( fila.size() - cursor );
 	}
 	
 	
 	public static Usuario desenfilera() {
 		
 		if(!vazia()) {
-			Usuario usuario= fila.get(0);
-			fila.remove(0);
+			Usuario usuario= fila.get(cursor);
+			cursor+= 1;
 			return usuario;
 		}
 		
@@ -41,10 +42,10 @@ public class Fila {
 	public static Usuario proximo() {
 		
 		if(!vazia())
-			return fila.get(0);
+			return fila.get(cursor);
 		
 		return null;
 		
 	}
-	
+
 }
